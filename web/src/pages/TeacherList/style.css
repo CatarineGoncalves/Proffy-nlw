@@ -1,0 +1,76 @@
+/* ANTES DO FORM */
+#page-teacher-list {
+    width: 100vw;
+    height: 100vh;
+}
+
+#page-teachers main {
+    margin: 3.2rem auto;
+    width: 90% ;
+}
+
+/* DENTRO DO FORM  */
+
+#search-teachers{ 
+    margin-top:3.2rem;
+}
+
+#search-teachers label {
+    color: var(--color-text-in-primary);
+}
+
+#search-teachers button {
+    width: 70%;
+    height: 4.5rem;
+    background: var(--color-secondary);
+    color: var(--color-button-text);
+    border: 0;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font: 700 1.6rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+    margin-top: 3rem;
+}
+#search-teachers button:hover {
+    background: var(--color-secondary-dark);
+}
+
+@media (min-width: 700px){
+
+    #page-teacher-list {
+        max-width: 100%;
+    }
+
+    #search-teachers {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 16px;
+        position: absolute;
+        bottom: -27px;
+
+    }
+
+    #search-teachers .input-block + .input-block {
+        margin-top:0 ;
+    }
+
+    #search-teachers .input-block input {
+        width: 100%;
+        height: 4.5rem;
+        margin-top: 1rem;
+        margin-bottom: 0.3rem;
+        border-radius: 0.8rem;
+        background: var(--color-input-background);
+        border: 1px solid var(--color-line-in-white);
+        outline: 0;
+        padding: 0 1.6rem ;
+        font: 1.6rem Archivo;
+    }
+
+    #search-teachers footer{
+        font-size: 1.5rem;
+    }
+}
